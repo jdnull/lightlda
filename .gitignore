@@ -2,3 +2,11 @@ bin
 multiverso
 src/*.o
 example/data
+windows/x64
+windows/*.sdf
+windows/*.suo
+windows/lightlda/x64
+windows/lightlda/*.0
+windows/lightlda/*.txt
+windows/dump_binary/x64
+data/nytimes/*

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>-num_vocabs 6019295 -num_topics 100 -num_iterations 100 -alpha 0.1 -beta 0.01 -mh_steps 2 -num_local_workers 2 -num_blocks 1 -max_num_document 10271716 -input_dir . -data_capacity 20000 -server_file C:\Users\MYZ\NewSmallCorpus\lightlda\multiverso_server_file.txt </LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>-num_vocabs 6019295 -num_topics 100 -num_iterations 100 -alpha 0.1 -beta 0.01 -mh_steps 2 -num_local_workers 2 -num_blocks 1 -max_num_document 10271716 -input_dir . -data_capacity 20000 -server_file C:\Users\MYZ\NewSmallCorpus\lightlda\multiverso_server_file.txt </LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
