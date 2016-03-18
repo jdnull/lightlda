@@ -17,6 +17,7 @@ namespace multiverso { namespace lightlda
     class LDADataBlock;
     class LightDocSampler;
     class Meta;
+    class PSModel;
 
     /*! \brief Trainer is responsible for training a data block */
     class Trainer : public TrainerBase
@@ -36,6 +37,7 @@ namespace multiverso { namespace lightlda
         void Evaluate(LDADataBlock* block);
 
         void Dump(int32_t iter, LDADataBlock* lda_data_block);
+
     private:
         /*! \brief alias table, for alias access */
         AliasTable* alias_;
@@ -45,6 +47,8 @@ namespace multiverso { namespace lightlda
         Barrier* barrier_;
         /*! \brief meta information */
         Meta* meta_;
+        /*! \brief model acceccor */
+        PSModel * model_;
         static std::mutex mutex_;
 
         static double doc_llh_;
